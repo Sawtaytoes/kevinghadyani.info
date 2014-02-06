@@ -1,0 +1,23 @@
+/////////////////////////////////////
+// Background Gradients
+/////////////////////////////////////
+
+// Setup a verticle background graident
+=backgroundGradientVertical($lightColor, $darkColor, $lightSpan, $darkSpan)
+	background: -webkit-linear-gradient(top, $lightColor $lightSpan, $darkColor $darkSpan)
+	background: linear-gradient(to bottom, $lightColor $lightSpan, $darkColor $darkSpan)
+	filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#{$lightColor}', endColorstr='#{$darkColor}', GradientType=0)
+
+
+/////////////////////////////////////
+// Background Colors
+/////////////////////////////////////
+
+.background-color--generic
+	background-color: $background-color--generic
+
+.background-color--bold
+	+backgroundGradientVertical($background-color--bold-gradient-light, $background-color--bold-gradient-dark, 0%, 100%)
+
+.background-color--muted
+	background-color: $background-color--muted

@@ -1,0 +1,63 @@
+//-//////////////////////////////////
+//- Meta
+//-//////////////////////////////////
+
+meta(charset="utf-8")
+meta(http-equiv="Content-Type", content="text/html", charset="UTF-8")
+meta(http-equiv="content-language", content="en")
+meta(http-equiv="X-UA-Compatible", content="IE=edge")
+meta(name="description", content="")
+meta(name="keywords", content="")
+meta(name="distribution", content="global")
+meta(name="viewport", content="width=device-width")
+
+
+//-//////////////////////////////////
+//- Styles
+//-//////////////////////////////////
+
+//- link(rel="stylesheet", href="http://fonts.googleapis.com/css?family=Open+Sans+Condensed:300,300italic,700|Open+Sans:400italic,700italic,400,600,700")
+
+| <!--[if IE 8]>
+link(rel="stylesheet", href="/assets/css/app-ie8.css")
+| <![endif]-->
+
+| <!--[if IE 9]>
+link(rel="stylesheet", href="/assets/css/app.css")
+| <![endif]-->
+
+| <!--[if !IE]><!-->
+link(rel="stylesheet", href="/assets/css/app.css")
+| <!--<![endif]-->
+
+
+//-//////////////////////////////////
+//- Scripts
+//-//////////////////////////////////
+
+if debug
+	| <!--[if !IE]><!-->
+	script(src='//localhost:35745/livereload.js')
+	| <!--<![endif]-->
+else
+	script.
+		//- //<![CDATA[
+		//- // Google Analytics for WordPress by Yoast v4.2.8 | http://yoast.com/wordpress/google-analytics/
+		//- var _gaq = _gaq || [];
+		//- _gaq.push(['_setAccount', 'UA-47040229-1']);
+		//- _gaq.push(['_trackPageview']);
+		//- (function () {
+		//- 	var ga = document.createElement('script');
+		//- 	ga.type = 'text/javascript';
+		//- 	ga.async = true;
+		//- 	ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+		//- 	var s = document.getElementsByTagName('script')[0];
+		//- 	s.parentNode.insertBefore(ga, s);
+		//- })();
+		//- //]]>
+
+script(src='/assets/js/modernizr.js')
+
+<!--[if IE 8]>
+<script src="/assets/js/ie.js"></script>
+<![endif]-->

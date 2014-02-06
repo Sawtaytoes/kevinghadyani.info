@@ -1,0 +1,25 @@
+//-//////////////////////////////////
+//- IE7 or older warning
+//-//////////////////////////////////
+
+| <!--[if lt IE 8]>
+
+.row.alert-box.info(data-alert)
+	.small-24.columns
+		| This website does not support your browser. Please <a href="http://browsehappy.com"><strong>upgrade to a different browser</strong></a> to view this site.
+		a.close(href="#") &times;
+
+| <![endif]-->
+
+
+//-//////////////////////////////////
+//- NoScript tag when JavaScript is disabled
+//-//////////////////////////////////
+
+noscript
+	.row.alert-box.warning(data-alert)
+		.small-24.columns
+			| For full functionality of this site, it is necessary to enable <a href="http://www.enable-javascript.com/" target="_blank"><b>JavaScript</b></a>.
+			| You may <a href="http://www.enable-javascript.com/" target="_blank"> enable JavaScript in your web browser by following these steps</a>.
+			a.close(href="#") &times;
+

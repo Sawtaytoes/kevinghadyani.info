@@ -1,0 +1,12 @@
+{
+  "name": "SafeFleet",
+  "version": "0.0.1",
+  "dependencies": {
+    "foundation": "5.x.x",
+    "jquery": "1.10.x",
+    "respond": ">= 1.4.2"
+  },
+  "resolutions": {
+    "jquery": "1.10.x"
+  }
+}

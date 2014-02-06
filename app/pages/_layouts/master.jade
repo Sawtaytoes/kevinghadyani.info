@@ -1,0 +1,47 @@
+//-//////////////////////////////////
+//- Vars
+//-//////////////////////////////////
+
+block vars
+	- global = {}
+	- global.page = {}
+	- global.page.title = {}
+	- global.page.title.prefix = 'Kevin Ghadyani\'s Personal Site'
+	- global.page.title.assembled = global.page.title.prefix
+
+if global.page.title.postfix
+	- global.page.title.assembled = global.page.title.prefix + ' | ' + global.page.title.postfix
+
+
+//-//////////////////////////////////
+//- Mixins
+//-//////////////////////////////////
+
+//- include ../_partials/mixins
+
+
+//-//////////////////////////////////
+//- Layout
+//-//////////////////////////////////
+
+doctype html
+
+//- IE Conditionals
+| <!--[if lte IE 7]> <html class="no-js lt-ie10 lt-ie9 lt-ie8"> <![endif]-->
+| <!--[if IE 8]> <html class="no-js lt-ie10 lt-ie9"> <![endif]-->
+| <!--[if IE 9]> <html class="no-js lt-ie10"> <![endif]-->
+| <!--[if !IE]><!--> <html class="no-js"> <!--<![endif]-->
+
+head
+	title #{global.page.title.assembled}
+	include ../_partials/head
+
+body
+	include ../_partials/site-warnings
+	include ../_partials/site-header
+	block body-content
+	include ../_partials/site-footer
+	include ../_partials/site-scripts
+	block body-scripts
+
+| </html>

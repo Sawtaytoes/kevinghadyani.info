@@ -1,0 +1,19 @@
+## Project Files ##
+/~res
+/public
+/temp
+.htaccess
+
+## Sass ##
+.sass-cache
+
+## Bower ##
+/bower_components
+
+## Grunt ##
+/node_modules
+
+## Misc ##
+.DS_Store
+[Tt]humbs.db
+*.dmp

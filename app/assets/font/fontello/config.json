@@ -1,0 +1,16 @@
+{
+  "name": "",
+  "css_prefix_text": "icon-",
+  "css_use_suffix": false,
+  "hinting": true,
+  "units_per_em": 1000,
+  "ascent": 850,
+  "glyphs": [
+    {
+      "uid": "3f06cdfffd60c5968c601a2e6c8f9a1b",
+      "css": "win8",
+      "code": 59392,
+      "src": "brandico"
+    }
+  ]
+}
