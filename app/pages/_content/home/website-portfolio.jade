@@ -2,7 +2,7 @@
 //- Website Portfolio
 //-//////////////////////////////////
 
-.row
+.row.content-separator
 	.small-12.columns
 
 
@@ -10,91 +10,180 @@
 		a(name="website-portfolio")
 		hgroup#website-portfolio(data-magellan-destination="website-portfolio")
 			h2.section-heading Website Portfolio
-			h3.section-subheading More recent programs from 2011-2013
+			h3.section-subheading Some recent sites from 2013-14
 
 
-		//- Jobs
-		h3.subsection-heading.subsection-heading--callout
-			a(href="http://kevinghadyani.info") KevinGhadyani.info
-			|  #{''}
-			small (this website)
-		p.
-			February 2014
-
-		h4 Build System
-		ul
-			li Self-developed Grunt automated workflow and build system
-
-		h4 Content Management System or Backend Framework
-		ul
-			li Built using the Jade Templating engine
-
-		h4 CSS &amp; JavaScript Frameworks
-		ul
-			li Foundation 5
-
-		h4 Noteable Features
-		ul
-			li Mobile-first responsive design for all devices
-
-		h4 Compatibility Requirements
-		ul
-			li IE8 and up
+.row.collapse
+	.small-12.columns
 
 
-		h3.subsection-heading
-			a(href="http://pulsengame.com") PulsenGame.com
-		h2.portfolio-date December 2012
-		p.
-			Created, designed, and developed myself
+		//- KevinGhadyani.info
+		article.subsection.portfolio-section
+			hgroup.subsection-heading__container
+				h3.subsection-heading.subsection-heading--callout.subsection-heading--callout--round-bottom-right
+					a.subsection-heading__link(href="http://kevinghadyani.info") KevinGhadyani.info
+					|  #{''}
+					small (this website)
+				h4.subsection-subheading.subsection-heading--callout.subsection-heading--callout--round-bottom-left.portfolio-date.
+					February 2014
 
-		h4 Backend Framework and Content Management System
-		ul
-			li CodeIgniter 2
-			li CKEditor 4
+			.row.collapse
 
-		h4 CSS &amp; JavaScript Frameworks
-		ul
-			li Foundation 3
+				.small-12.medium-4.columns
+					ul.clearing-thumbs.clearing-feature.subsection--padding(data-clearing)
+						li
+							a.th.radius(href="http://dummyimage.com/800x600/4d494d/686a82.gif&text=placeholder+image")
+								img(src="http://dummyimage.com/800x600/4d494d/686a82.gif&text=placeholder+image", alt="placeholder+image")
+						li.clearing-featured-img
+							a.th.radius(href="http://dummyimage.com/800x600/4d494d/686a82.gif&text=placeholder+image")
+								img(src="http://dummyimage.com/800x600/4d494d/686a82.gif&text=placeholder+image", alt="placeholder+image")
 
-		h4 Noteable Features
-		ul
-			li Responsive design for all devices
+				.small-12.medium-8.columns
+					dl.subsection--padding
+						dt.portfolio-heading Build System
+						dd.portfolio-description Self-developed Grunt automated workflow and build system
 
-		h4 Compatibility Requirements
-		ul
-			li Graceful degredation back to IE8
+						dt.portfolio-heading Content Management System or Backend Framework
+						dd.portfolio-description Built using the Jade Templating engine
 
+						dt.portfolio-heading Frontend Frameworks
+						dd.portfolio-description
+							ul.portfolio-description__list
+								li.portfolio-description__item Zurb Foundation 5
+								li.portfolio-description__item jQuery
 
-		h3.subsection-heading
-			a(href="http://www.biviultraduramune.com") BIVIUltraDuramune.com
-		p.
-			November 2012
-		ul
-			li Adobe CQ5
-			li Foundation 3
-			li Responsive design for all devices
-			li Compatibility back to IE7
+						dt.portfolio-heading Noteable Features
+						dd.portfolio-description Mobile-first responsive design for all devices
 
-
-		h3.subsection-heading
-			a(href="http://kchealthcarereform.org/") KCHealthCareReform.org
-		p.
-			May 2013
-		ul
-			li Built using the Jade Templating engine
-			li Foundation 3
-			li Responsive design for all devices
-			li Compatibility back to IE8
+						dt.portfolio-heading Compatibility Requirements
+						dd.portfolio-description IE8 and up
 
 
-		h3.subsection-heading
-			a(href="http://romcorp.com") ROMCorp.com
-		p.
-			April 2013
-		ul
-			li WordPress
-			li Joomla
-			li Bootstrap 2
-			li Responsive design for all devices
-			li Compatibility back to IE8
+		//- PulsenGame.com
+		article.subsection.portfolio-section
+			hgroup.subsection-heading__container
+				h3.subsection-heading.subsection-heading--callout.subsection-heading--callout--round-bottom-right
+					a.subsection-heading__link(href="http://pulsengame.com") PulsenGame.com
+				h4.subsection-subheading.subsection-heading--callout.subsection-heading--callout--round-bottom-left.portfolio-date.
+					December 2012
+
+			dl.subsection--padding
+				dt.portfolio-heading Creation
+				dd.portfolio-description Created, designed, and developed myself
+
+				dt.portfolio-heading Backend Framework and Content Management System
+				dd.portfolio-description Running on the CodeIgniter 2 framework for PHP using CKEditor 4 and a custom-made CMS to edit news posts
+
+				dt.portfolio-heading Frontend Frameworks
+				dd.portfolio-description
+					ul.portfolio-description__list
+						li.portfolio-description__item Zurb Foundation 3
+						li.portfolio-description__item jQuery
+
+				dt.portfolio-heading Noteable Features
+				dd.portfolio-description Responsive design for all devices
+
+				dt.portfolio-heading Compatibility Requirements
+				dd.portfolio-description Graceful degredation all the way back to IE8
+
+
+		//- KCHealthCareReform.org
+		article.subsection.portfolio-section
+			hgroup.subsection-heading__container
+				h3.subsection-heading.subsection-heading--callout.subsection-heading--callout--round-bottom-right
+					a.subsection-heading__link(href="http://kchealthcarereform.org/") KCHealthCareReform.org
+				h4.subsection-subheading.subsection-heading--callout.subsection-heading--callout--round-bottom-left.portfolio-date.
+					May 2013
+
+			dl.subsection--padding
+				dt.portfolio-heading Backend Framework and Content Management System
+				dd.portfolio-description Built using a custom implementation of the Jade Templating engine as a completely static site with JavaScript AJAX search and filtering
+
+				dt.portfolio-heading Frontend Frameworks
+				dd.portfolio-description
+					ul.portfolio-description__list
+						li.portfolio-description__item Zurb Foundation 4
+						li.portfolio-description__item jQuery
+
+				dt.portfolio-heading Noteable Features
+				dd.portfolio-description Unique static-HTML searching via JavaScript and pre-compiled indexes
+
+				dt.portfolio-heading Compatibility Requirements
+				dd.portfolio-description Compatibility back to IE8
+
+
+		//- LangdonEmison.com
+		article.subsection.portfolio-section
+			hgroup.subsection-heading__container
+				h3.subsection-heading.subsection-heading--callout.subsection-heading--callout--round-bottom-right
+					a.subsection-heading__link(href="http://langdonemison.com") LangdonEmison.com
+				h4.subsection-subheading.subsection-heading--callout.subsection-heading--callout--round-bottom-left.portfolio-date.
+					April 2013
+
+			dl.subsection--padding
+				dt.portfolio-heading Backend Framework and Content Management System
+				dd.portfolio-description Built as standard HTML and CSS around an already-existing Ruby on Rails framework
+
+				dt.portfolio-heading Frontend Frameworks
+				dd.portfolio-description
+					ul.portfolio-description__list
+						li.portfolio-description__item Zurb Foundation 4
+						li.portfolio-description__item jQuery
+
+				dt.portfolio-heading Noteable Features
+				dd.portfolio-description Responsive design for all devices
+
+				dt.portfolio-heading Compatibility Requirements
+				dd.portfolio-description Graceful degredation all the way back to IE8
+
+
+		//- ROMCorp.com
+		article.subsection.portfolio-section
+			hgroup.subsection-heading__container
+				h3.subsection-heading.subsection-heading--callout.subsection-heading--callout--round-bottom-right
+					a.subsection-heading__link(href="http://romcorp.com") ROMCorp.com
+				h4.subsection-subheading.subsection-heading--callout.subsection-heading--callout--round-bottom-left.portfolio-date.
+					June 2013
+
+			dl.subsection--padding
+				dt.portfolio-heading Backend Framework and Content Management System
+				dd.portfolio-description Both WordPress 3.x and Joomla 3.x are used together, communicating over AJAX with many database links so content in one CMS is accessible in the other
+
+				dt.portfolio-heading Frontend Frameworks
+				dd.portfolio-description
+					ul.portfolio-description__list
+						li.portfolio-description__item Bootstrap 2
+						li.portfolio-description__item jQuery
+						li.portfolio-description__item AJAX
+						li.portfolio-description__item PointerEvents Polyfill
+
+				dt.portfolio-heading Noteable Features
+				dd.portfolio-description Completely new menu navigation so touch devices and utilize the navigational functionality of the desktop website
+
+				dt.portfolio-heading Compatibility Requirements
+				dd.portfolio-description Compatibility back to IE8
+
+
+		//- BIVIUltraDuramune.com
+		article.subsection.portfolio-section
+			hgroup.subsection-heading__container
+				h3.subsection-heading.subsection-heading--callout.subsection-heading--callout--round-bottom-right
+					a.subsection-heading__link(href="http://www.biviultraduramune.com") BIVIUltraDuramune.com
+				h4.subsection-subheading.subsection-heading--callout.subsection-heading--callout--round-bottom-left.portfolio-date.
+					November 2012
+
+			dl.subsection--padding
+				dt.portfolio-heading Backend Framework and Content Management System
+				dd.portfolio-description Adobe CQ5
+
+				dt.portfolio-heading Frontend Frameworks
+				dd.portfolio-description
+					ul.portfolio-description__list
+						li.portfolio-description__item Zurb Foundation 3
+						li.portfolio-description__item jQuery
+
+				dt.portfolio-heading Noteable Features
+				dd.portfolio-description Responsive design for all devices
+
+				dt.portfolio-heading Compatibility Requirements
+				dd.portfolio-description Compatibility back to IE7

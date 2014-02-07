@@ -129,10 +129,28 @@
       "src": "fontelico"
     },
     {
+      "uid": "9396b2d8849e0213a0f11c5fd7fcc522",
+      "css": "tasks",
+      "code": 59409,
+      "src": "fontawesome"
+    },
+    {
       "uid": "e9fa538fd5913046497ac148e27cd8ea",
       "css": "apple",
       "code": 59406,
       "src": "fontawesome"
+    },
+    {
+      "uid": "e1597911f34fea0a188ae51fe4a2d9a9",
+      "css": "stackoverflow-1",
+      "code": 59408,
+      "src": "fontawesome"
+    },
+    {
+      "uid": "9bba5df43e4e9419975336161e1810c3",
+      "css": "github",
+      "code": 59407,
+      "src": "zocial"
     },
     {
       "uid": "3f06cdfffd60c5968c601a2e6c8f9a1b",
