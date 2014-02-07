@@ -1,17 +1,38 @@
 /////////////////////////////////////
-// Headings
+// Sections
 /////////////////////////////////////
 
 .section-heading
-	@extend .font-family--aaargh
-	// @extend .font-size--heading
+	@extend %font-family--aaargh-normal
+	@extend %font-size--heading
+	@extend %line-height--reset
 	text-transform: uppercase
 
 .section-subheading
-	// font-weight: normal
-	// font-style: italic
-	@extend .font-family--aaargh
-	@extend .font-size--subheading
+	margin: 0 0 rem-calc(30) rem-calc(10)
+	@extend %font-family--amble-light
+	@extend %font-size--subheading
+	@extend %line-height--reset
+
+
+/////////////////////////////////////
+// Subsections
+/////////////////////////////////////
+
+.subsection
+	padding: rem-calc(20)
+
+	&:nth-child(odd)
+		@extend %background-color--alternate
+
+.subsection-heading
+	margin-top: 0
+	@extend %font-family--amble-regular
+	font-size: rem-calc(24)
+
+.subsection-subheading
+	@extend %font-family--amble-light
+	font-size: rem-calc(18)
 
 
 /////////////////////////////////////
@@ -19,4 +40,4 @@
 /////////////////////////////////////
 
 // .section-paragraph
-// 	@extend .font-size--paragraph
+// 	@extend %font-size--paragraph

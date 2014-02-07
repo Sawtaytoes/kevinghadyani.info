@@ -1,0 +1,36 @@
+/////////////////////////////////////
+// Container
+/////////////////////////////////////
+
+.magellan-container
+	margin-bottom: rem-calc(30)
+	@extend %background-color--bold
+	border-bottom: rem-calc(3) solid $header-border-color
+
+.sub-nav--magellan
+	@extend %line-height--reset
+
+	> dd
+		> a
+			@extend %font-color--light
+
+		&.active
+			> a
+				// padding: rem-calc(6) rem-calc(16)
+				background-color: $magellan-active-background-color
+
+				&:hover,
+				&:focus,
+				&:active
+					background-color: $magellan-active-background-color--hover
+
+@media #{$small-only}
+	.sub-nav--magellan
+		> dd
+			&:nth-child(n+2)
+				margin-left: rem-calc(5)
+
+			&,
+			&.active
+				> a
+					padding: rem-calc(5) rem-calc(8)

@@ -1,2 +1,16 @@
 
-.icon-win8:before { content: '\e800'; } /* '' */
+.icon-cq5:before { content: '\e802'; } /* '' */
+.icon-wordpress:before { content: '\e800'; } /* '' */
+.icon-joomla:before { content: '\e803'; } /* '' */
+.icon-jquery:before { content: '\e807'; } /* '' */
+.icon-stylus-alt:before { content: '\e80b'; } /* '' */
+.icon-laravel-slant:before { content: '\e806'; } /* '' */
+.icon-sass:before { content: '\e801'; } /* '' */
+.icon-lua:before { content: '\e805'; } /* '' */
+.icon-chrome:before { content: '\e80a'; } /* '' */
+.icon-opera:before { content: '\e809'; } /* '' */
+.icon-ie:before { content: '\e80d'; } /* '' */
+.icon-apple:before { content: '\e80e'; } /* '' */
+.icon-win8:before { content: '\e808'; } /* '' */
+.icon-star-circled:before { content: '\e804'; } /* '' */
+.icon-firefox:before { content: '\e80c'; } /* '' */

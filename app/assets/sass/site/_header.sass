@@ -1,6 +1,32 @@
 /////////////////////////////////////
-// Header Nav
+// Site Header
 /////////////////////////////////////
 
-// .site-header__logo
-// 	margin: rem-calc(4) rem-calc(4)
+.site-header
+	// margin-bottom: rem-calc(30)
+	border-top: rem-calc(32) solid $header-border-color
+
+.site-header__heading
+	margin-top: rem-calc(10)
+	@extend %font-family--aaargh-normal
+	border-bottom: rem-calc(4) solid $header-border-color
+
+.site-header__subheading
+	@extend %font-family--amble-light
+	font-size: rem-calc(18)
+
+.site-header__paragraph
+	font-size: rem-calc(16)
+
+@media #{$small-only}
+	.site-header__subheading
+		margin-bottom: rem-calc(13)
+		display: block
+
+@media #{$medium-up}
+	.site-header__heading
+		font-size: rem-calc(48)
+
+@media #{$large-up}
+	.site-header__heading
+		font-size: rem-calc(64)
