@@ -1,17 +1,88 @@
 /////////////////////////////////////
-// Headings
+// Content
+/////////////////////////////////////
+
+.content-separator
+	padding-top: rem-calc(21)
+	border-top: 4px solid $border-color--bold
+
+
+/////////////////////////////////////
+// Sections
 /////////////////////////////////////
 
 .section-heading
-	@extend .font-family--aaargh
-	// @extend .font-size--heading
+	@extend %font-family--aaargh-normal
+	@extend %font-size--heading
+	@extend %line-height--reset
 	text-transform: uppercase
 
 .section-subheading
-	// font-weight: normal
-	// font-style: italic
-	@extend .font-family--aaargh
-	@extend .font-size--subheading
+	margin: 0 0 rem-calc(30) rem-calc(10)
+	@extend %font-family--amble-light
+	@extend %font-size--subheading
+	@extend %line-height--reset
+
+
+/////////////////////////////////////
+// Subsections
+/////////////////////////////////////
+
+.subsection
+	&:nth-of-type(odd)
+		@extend %background-color--alternate
+
+.subsection--padding
+	margin-bottom: 0
+	padding: rem-calc(20)
+
+.subsection-heading__container
+	clear: both
+	overflow: hidden
+
+.subsection-heading
+	margin-top: 0
+	@extend %font-family--amble-regular
+	font-size: rem-calc(24)
+
+.subsection-heading--callout
+	padding: rem-calc(6) rem-calc(10)
+	display: block
+	@extend %background-color--muted
+	border-bottom: 2px solid $border-color--bold
+	@extend %box-shadow--generic
+
+.subsection-heading--callout--round-bottom-left
+	border-bottom-left-radius: rem-calc(4)
+
+.subsection-heading--callout__small
+	@extend .site-header__subheading
+
+.subsection-heading__link
+	@extend %font-color--bold
+
+	&:hover,
+	&:focus,
+	&:active
+		text-decoration: underline
+
+.subsection-subheading
+	@extend %font-family--amble-light
+	font-size: rem-calc(18)
+
+.subsection__section
+	padding: rem-calc(20)
+
+@media #{$medium-up}
+	.subsection-heading--callout
+		font-size: rem-calc(32)
+		float: left
+
+	.subsection-heading--callout--round-bottom-right
+		border-bottom-right-radius: rem-calc(4)
+
+	.subsection--float-right
+		float: right
 
 
 /////////////////////////////////////
@@ -19,4 +90,4 @@
 /////////////////////////////////////
 
 // .section-paragraph
-// 	@extend .font-size--paragraph
+// 	@extend %font-size--paragraph

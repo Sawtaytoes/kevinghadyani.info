@@ -1,7 +1,50 @@
 /////////////////////////////////////
+// Font Sizes
+/////////////////////////////////////
+
+%font-size--heading
+	font-size: rem-calc(36)
+%font-size--subheading
+	font-size: rem-calc(16)
+%font-size--paragraph
+	font-size: rem-calc(12)
+
+
+/////////////////////////////////////
+// Colors
+/////////////////////////////////////
+
+%font-color--generic
+	color: $font-color--generic
+%font-color--light
+	color: $font-color--light
+%font-color--bold
+	color: $font-color--bold
+// %font-color--bold--muted
+// 	color: $font-color--bold--muted
+
+
+/////////////////////////////////////
+// Line Height
+/////////////////////////////////////
+
+%line-height--reset
+	line-height: 1
+
+
+/////////////////////////////////////
+// Lists
+/////////////////////////////////////
+
+%list-style--none
+	list-style: none
+
+
+/////////////////////////////////////
 // Font Families
 /////////////////////////////////////
 
+// Aaargh Normal
 @font-face
 	font-family: 'aaarghnormal'
 	src: url("/assets/font/aaargh_normal_macroman/Aaargh-webfont.eot")
@@ -9,42 +52,38 @@
 	font-weight: normal
 	font-style: normal
 
-.font-family--aaargh
-	font-family: aaarghnormal, $body-font-family
+%font-family--aaargh-normal
+	font-family: aaarghnormal, $default-font-family-list
 
-// .font-family--condensed
-// 	font-family: "Open Sans Condensed", "Open Sans", "Helvetica Neue", "Helvetica", Helvetica, Arial, sans-serif
+// Amble Regular
+@font-face
+	font-family: 'ambleregular'
+	src: url("/assets/font/amble_regular_macroman/Amble-Regular-webfont.eot")
+	src: url("/assets/font/amble_regular_macroman/Amble-Regular-webfont.eot?#iefix") format("embedded-opentype"), url("/assets/font/amble_regular_macroman/Amble-Regular-webfont.woff") format("woff"), url("/assets/font/amble_regular_macroman/Amble-Regular-webfont.ttf") format("truetype"), url("/assets/font/amble_regular_macroman/Amble-Regular-webfont.svg#aaarghnormal") format("svg")
+	font-weight: normal
+	font-style: normal
 
+%font-family--amble-regular
+	font-family: ambleregular, $default-font-family-list
 
-/////////////////////////////////////
-// Font Sizes
-/////////////////////////////////////
+// Amble Light
+@font-face
+	font-family: 'amblelight'
+	src: url("/assets/font/amble_light_macroman/Amble-Light-webfont.eot")
+	src: url("/assets/font/amble_light_macroman/Amble-Light-webfont.eot?#iefix") format("embedded-opentype"), url("/assets/font/amble_light_macroman/Amble-Light-webfont.woff") format("woff"), url("/assets/font/amble_light_macroman/Amble-Light-webfont.ttf") format("truetype"), url("/assets/font/amble_light_macroman/Amble-Light-webfont.svg#aaarghnormal") format("svg")
+	font-weight: normal
+	font-style: normal
 
-.font-size--heading
-	font-size: rem-calc(24)
-.font-size--subheading
-	font-size: rem-calc(18)
-.font-size--paragraph
-	font-size: rem-calc(16)
+%font-family--amble-light
+	font-family: amblelight, $default-font-family-list
 
+// Amble Bold
+@font-face
+	font-family: 'amblebold'
+	src: url("/assets/font/amble_bold_macroman/Amble-Bold-webfont.eot")
+	src: url("/assets/font/amble_bold_macroman/Amble-Bold-webfont.eot?#iefix") format("embedded-opentype"), url("/assets/font/amble_bold_macroman/Amble-Bold-webfont.woff") format("woff"), url("/assets/font/amble_bold_macroman/Amble-Bold-webfont.ttf") format("truetype"), url("/assets/font/amble_bold_macroman/Amble-Bold-webfont.svg#aaarghnormal") format("svg")
+	font-weight: normal
+	font-style: normal
 
-/////////////////////////////////////
-// Colors
-/////////////////////////////////////
-
-// .text-color--generic
-// 	color: $text-color--generic
-// .text-color--light
-// 	color: $text-color--light
-// .text-color--bold
-// 	color: $text-color--bold
-// .text-color--bold--muted
-// 	color: $text-color--bold--muted
-
-
-/////////////////////////////////////
-// Lists
-/////////////////////////////////////
-
-.list-style--none
-	list-style: none
+%font-family--amble-bold
+	font-family: amblebold, $default-font-family-list

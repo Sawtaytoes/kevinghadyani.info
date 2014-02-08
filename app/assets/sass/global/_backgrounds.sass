@@ -13,11 +13,22 @@
 // Background Colors
 /////////////////////////////////////
 
-.background-color--generic
+%background-color--generic
 	background-color: $background-color--generic
 
-.background-color--bold
-	+backgroundGradientVertical($background-color--bold-gradient-light, $background-color--bold-gradient-dark, 0%, 100%)
+%background-color--alternate
+	background-color: $background-color--alternate
 
-.background-color--muted
+%background-color--bold
+	background-color: $background-color--bold
+
+%background-color--muted
 	background-color: $background-color--muted
+
+
+/////////////////////////////////////
+// Box Shadows
+/////////////////////////////////////
+
+%box-shadow--generic
+	box-shadow: 0 0 rem-calc(4) 0 $box-shadow-color

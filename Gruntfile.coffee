@@ -95,6 +95,7 @@ module.exports = (grunt) ->
 				dest: '<%= locations.font.dest %>'
 				filter: 'isFile'
 			]
+			watch: '<%= locations.font.src %>**'
 
 		# Images
 		img:
@@ -412,6 +413,11 @@ module.exports = (grunt) ->
 					'<%= locations.png.watch %>'
 				]
 				tasks: 'imagemin'
+
+			# Fonts
+			font:
+				files: '<%= locations.font.watch %>'
+				tasks: 'copy:font'
 
 			# JS
 			coffee:

@@ -1,0 +1,6 @@
+ImageMagick-6.8.8-4/convert biviultraduramune.com/*.png -thumbnail 240x240^ -gravity north -extent 240x240 biviultraduramune.com/*.png
+ImageMagick-6.8.8-4/convert kchealthcarereform.org/*.png -thumbnail 240x240^ -gravity north -extent 240x240 kchealthcarereform.org/*.png
+ImageMagick-6.8.8-4/convert kevinghadyani.info/*.png -thumbnail 240x240^ -gravity north -extent 240x240 kevinghadyani.info/*.png
+ImageMagick-6.8.8-4/convert langdonemison.com/*.png -thumbnail 240x240^ -gravity north -extent 240x240 langdonemison.com/*.png
+ImageMagick-6.8.8-4/convert pulsengame.com/*.png -thumbnail 240x240^ -gravity north -extent 240x240 pulsengame.com/*.png
+ImageMagick-6.8.8-4/convert romcorp.com/*.png -thumbnail 240x240^ -gravity north -extent 240x240 romcorp.com/*.png
