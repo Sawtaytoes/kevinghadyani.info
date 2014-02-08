@@ -23,41 +23,43 @@
 				h3.subsection-heading.subsection-heading--callout.subsection-heading--callout--round-bottom-right
 					a.subsection-heading__link(href="http://kevinghadyani.info") KevinGhadyani.info
 					|  #{''}
-					small (this website)
+					small.subsection-heading--callout__small (this website)
 				h4.subsection-subheading.subsection-heading--callout.subsection-heading--callout--round-bottom-left.portfolio-date.
 					February 2014
 
-			.row.collapse
+			.clearfix
+				ul.clearing-thumbs.clearing-feature.subsection--padding.subsection--float-right(data-clearing)
+					li.clearing-featured-img
+						a.th.radius(href="/assets/img/websites/full/kevinghadyani.info/01.png")
+							img(src="/assets/img/websites/thumbnail/kevinghadyani.info/01.png", data-caption="Mobile View")
+					li
+						a.th.radius(href="/assets/img/websites/full/kevinghadyani.info/02.png")
+							img(src="/assets/img/websites/thumbnail/kevinghadyani.info/02.png", data-caption="Tablet View")
+					li
+						a.th.radius(href="/assets/img/websites/full/kevinghadyani.info/03.png")
+							img(src="/assets/img/websites/thumbnail/kevinghadyani.info/03.png", data-caption="Desktop View")
+					li
+						a.th.radius(href="/assets/img/websites/full/kevinghadyani.info/04.png")
+							img(src="/assets/img/websites/thumbnail/kevinghadyani.info/04.png", data-caption="Full-screen Desktop View")
 
-				.small-12.medium-4.columns
-					ul.clearing-thumbs.clearing-feature.subsection--padding(data-clearing)
-						li
-							a.th.radius(href="http://dummyimage.com/800x600/4d494d/686a82.gif&text=placeholder+image")
-								img(src="http://dummyimage.com/800x600/4d494d/686a82.gif&text=placeholder+image", alt="placeholder+image")
-						li.clearing-featured-img
-							a.th.radius(href="http://dummyimage.com/800x600/4d494d/686a82.gif&text=placeholder+image")
-								img(src="http://dummyimage.com/800x600/4d494d/686a82.gif&text=placeholder+image", alt="placeholder+image")
+				dl.subsection--padding
+					dt.portfolio-heading Build System
+					dd.portfolio-description Self-developed Grunt automated workflow and build system
 
-				.small-12.medium-8.columns
-					dl.subsection--padding
-						dt.portfolio-heading Build System
-						dd.portfolio-description Self-developed Grunt automated workflow and build system
+					dt.portfolio-heading Content Management System or Backend Framework
+					dd.portfolio-description Built using the Jade Templating engine
 
-						dt.portfolio-heading Content Management System or Backend Framework
-						dd.portfolio-description Built using the Jade Templating engine
+					dt.portfolio-heading Frontend Frameworks
+					dd.portfolio-description
+						ul.portfolio-description__list
+							li.portfolio-description__item Zurb Foundation 5
+							li.portfolio-description__item jQuery
 
-						dt.portfolio-heading Frontend Frameworks
-						dd.portfolio-description
-							ul.portfolio-description__list
-								li.portfolio-description__item Zurb Foundation 5
-								li.portfolio-description__item jQuery
+					dt.portfolio-heading Noteable Features
+					dd.portfolio-description Mobile-first responsive design for all devices
 
-						dt.portfolio-heading Noteable Features
-						dd.portfolio-description Mobile-first responsive design for all devices
-
-						dt.portfolio-heading Compatibility Requirements
-						dd.portfolio-description IE8 and up
-
+					dt.portfolio-heading Compatibility Requirements
+					dd.portfolio-description IE8 and up
 
 		//- PulsenGame.com
 		article.subsection.portfolio-section
@@ -67,49 +69,97 @@
 				h4.subsection-subheading.subsection-heading--callout.subsection-heading--callout--round-bottom-left.portfolio-date.
 					December 2012
 
-			dl.subsection--padding
-				dt.portfolio-heading Creation
-				dd.portfolio-description Created, designed, and developed myself
+			.clearfix
+				ul.clearing-thumbs.clearing-feature.subsection--padding.subsection--float-right(data-clearing)
+					li.clearing-featured-img
+						a.th.radius(href="/assets/img/websites/full/pulsengame.com/01.png")
+							img(src="/assets/img/websites/thumbnail/pulsengame.com/01.png", data-caption="Homepage Mobile View")
+					li
+						a.th.radius(href="/assets/img/websites/full/pulsengame.com/02.png")
+							img(src="/assets/img/websites/thumbnail/pulsengame.com/02.png", data-caption="Homepage Mobile View w/ Nav")
+					li
+						a.th.radius(href="/assets/img/websites/full/pulsengame.com/03.png")
+							img(src="/assets/img/websites/thumbnail/pulsengame.com/03.png", data-caption="Homepage Tablet View")
+					li
+						a.th.radius(href="/assets/img/websites/full/pulsengame.com/04.png")
+							img(src="/assets/img/websites/thumbnail/pulsengame.com/04.png", data-caption="Homepage Desktop View")
+					li
+						a.th.radius(href="/assets/img/websites/full/pulsengame.com/05.png")
+							img(src="/assets/img/websites/thumbnail/pulsengame.com/05.png", data-caption="Homepage Full-screen")
+					li
+						a.th.radius(href="/assets/img/websites/full/pulsengame.com/06.png")
+							img(src="/assets/img/websites/thumbnail/pulsengame.com/06.png", data-caption="Downloads Page Mobile View")
+					li
+						a.th.radius(href="/assets/img/websites/full/pulsengame.com/07.png")
+							img(src="/assets/img/websites/thumbnail/pulsengame.com/07.png", data-caption="Downloads Page Desktop View")
 
-				dt.portfolio-heading Backend Framework and Content Management System
-				dd.portfolio-description Running on the CodeIgniter 2 framework for PHP using CKEditor 4 and a custom-made CMS to edit news posts
+				dl.subsection--padding
+					dt.portfolio-heading Creation
+					dd.portfolio-description Created, designed, and developed myself
 
-				dt.portfolio-heading Frontend Frameworks
-				dd.portfolio-description
-					ul.portfolio-description__list
-						li.portfolio-description__item Zurb Foundation 3
-						li.portfolio-description__item jQuery
+					dt.portfolio-heading Backend Framework and Content Management System
+					dd.portfolio-description Running on the CodeIgniter 2 framework for PHP using CKEditor 4 and a custom-made CMS to edit news posts
 
-				dt.portfolio-heading Noteable Features
-				dd.portfolio-description Responsive design for all devices
+					dt.portfolio-heading Frontend Frameworks
+					dd.portfolio-description
+						ul.portfolio-description__list
+							li.portfolio-description__item Zurb Foundation 3
+							li.portfolio-description__item jQuery
 
-				dt.portfolio-heading Compatibility Requirements
-				dd.portfolio-description Graceful degredation all the way back to IE8
+					dt.portfolio-heading Noteable Features
+					dd.portfolio-description Responsive design for all devices
+
+					dt.portfolio-heading Compatibility Requirements
+					dd.portfolio-description Graceful degredation all the way back to IE8
 
 
-		//- KCHealthCareReform.org
+		//- KCHealthcareReform.org
 		article.subsection.portfolio-section
 			hgroup.subsection-heading__container
 				h3.subsection-heading.subsection-heading--callout.subsection-heading--callout--round-bottom-right
-					a.subsection-heading__link(href="http://kchealthcarereform.org/") KCHealthCareReform.org
+					a.subsection-heading__link(href="http://kchealthcarereform.org/") KCHealthcareReform.org
 				h4.subsection-subheading.subsection-heading--callout.subsection-heading--callout--round-bottom-left.portfolio-date.
 					May 2013
 
-			dl.subsection--padding
-				dt.portfolio-heading Backend Framework and Content Management System
-				dd.portfolio-description Built using a custom implementation of the Jade Templating engine as a completely static site with JavaScript AJAX search and filtering
+			.clearfix
+				ul.clearing-thumbs.clearing-feature.subsection--padding.subsection--float-right(data-clearing)
+					li.clearing-featured-img
+						a.th.radius(href="/assets/img/websites/full/kchealthcarereform.org/01.png")
+							img(src="/assets/img/websites/thumbnail/kchealthcarereform.org/01.png", data-caption="Homepage Mobile View")
+					li
+						a.th.radius(href="/assets/img/websites/full/kchealthcarereform.org/02.png")
+							img(src="/assets/img/websites/thumbnail/kchealthcarereform.org/02.png", data-caption="Homepage Desktop View")
+					li
+						a.th.radius(href="/assets/img/websites/full/kchealthcarereform.org/03.png")
+							img(src="/assets/img/websites/thumbnail/kchealthcarereform.org/03.png", data-caption="Custom Search Page")
+					li
+						a.th.radius(href="/assets/img/websites/full/kchealthcarereform.org/04.png")
+							img(src="/assets/img/websites/thumbnail/kchealthcarereform.org/04.png", data-caption="Contact Page Mobile View")
+					li
+						a.th.radius(href="/assets/img/websites/full/kchealthcarereform.org/05.png")
+							img(src="/assets/img/websites/thumbnail/kchealthcarereform.org/05.png", data-caption="Contact Page Desktop View")
+					li
+						a.th.radius(href="/assets/img/websites/full/kchealthcarereform.org/06.png")
+							img(src="/assets/img/websites/thumbnail/kchealthcarereform.org/06.png", data-caption="Custom Blog Page")
 
-				dt.portfolio-heading Frontend Frameworks
-				dd.portfolio-description
-					ul.portfolio-description__list
-						li.portfolio-description__item Zurb Foundation 4
-						li.portfolio-description__item jQuery
+				dl.subsection--padding
+					dt.portfolio-heading Associated Organization
+					dd.portfolio-description: a(href="http://group3solutions.com") Group 3 Solutions
 
-				dt.portfolio-heading Noteable Features
-				dd.portfolio-description Unique static-HTML searching via JavaScript and pre-compiled indexes
+					dt.portfolio-heading Backend Framework and Content Management System
+					dd.portfolio-description Built using a custom implementation of the Jade Templating engine as a completely static site with JavaScript AJAX search and filtering
 
-				dt.portfolio-heading Compatibility Requirements
-				dd.portfolio-description Compatibility back to IE8
+					dt.portfolio-heading Frontend Frameworks
+					dd.portfolio-description
+						ul.portfolio-description__list
+							li.portfolio-description__item Zurb Foundation 4
+							li.portfolio-description__item jQuery
+
+					dt.portfolio-heading Noteable Features
+					dd.portfolio-description Unique static-HTML searching via JavaScript and pre-compiled indexes
+
+					dt.portfolio-heading Compatibility Requirements
+					dd.portfolio-description Compatibility back to IE8
 
 
 		//- LangdonEmison.com
@@ -120,21 +170,47 @@
 				h4.subsection-subheading.subsection-heading--callout.subsection-heading--callout--round-bottom-left.portfolio-date.
 					April 2013
 
-			dl.subsection--padding
-				dt.portfolio-heading Backend Framework and Content Management System
-				dd.portfolio-description Built as standard HTML and CSS around an already-existing Ruby on Rails framework
+			.clearfix
+				ul.clearing-thumbs.clearing-feature.subsection--padding.subsection--float-right(data-clearing)
+					li.clearing-featured-img
+						a.th.radius(href="/assets/img/websites/full/langdonemison.com/01.png")
+							img(src="/assets/img/websites/thumbnail/langdonemison.com/01.png", data-caption="Mobile View")
+					li
+						a.th.radius(href="/assets/img/websites/full/langdonemison.com/02.png")
+							img(src="/assets/img/websites/thumbnail/langdonemison.com/02.png", data-caption="Tablet View")
+					li
+						a.th.radius(href="/assets/img/websites/full/langdonemison.com/03.png")
+							img(src="/assets/img/websites/thumbnail/langdonemison.com/03.png", data-caption="Desktop View")
+					li
+						a.th.radius(href="/assets/img/websites/full/langdonemison.com/04.png")
+							img(src="/assets/img/websites/thumbnail/langdonemison.com/04.png", data-caption="Large Desktop View")
+					li
+						a.th.radius(href="/assets/img/websites/full/langdonemison.com/05.png")
+							img(src="/assets/img/websites/thumbnail/langdonemison.com/05.png", data-caption="Full-screen Desktop View")
 
-				dt.portfolio-heading Frontend Frameworks
-				dd.portfolio-description
-					ul.portfolio-description__list
-						li.portfolio-description__item Zurb Foundation 4
-						li.portfolio-description__item jQuery
+				dl.subsection--padding
+					dt.portfolio-heading Associated Organizations
+					dd.portfolio-description
+						a(href="http://group3solutions.com") Group 3 Solutions
+						| #{''}
+						| and
+						| #{''}
+						a(href="http://www.quickcadence.com/") Quick Cadence Consulting
 
-				dt.portfolio-heading Noteable Features
-				dd.portfolio-description Responsive design for all devices
+					dt.portfolio-heading Backend Framework and Content Management System
+					dd.portfolio-description Built as standard HTML and CSS around an already-existing Ruby on Rails framework
 
-				dt.portfolio-heading Compatibility Requirements
-				dd.portfolio-description Graceful degredation all the way back to IE8
+					dt.portfolio-heading Frontend Frameworks
+					dd.portfolio-description
+						ul.portfolio-description__list
+							li.portfolio-description__item Zurb Foundation 4
+							li.portfolio-description__item jQuery
+
+					dt.portfolio-heading Noteable Features
+					dd.portfolio-description Responsive design for all devices
+
+					dt.portfolio-heading Compatibility Requirements
+					dd.portfolio-description Graceful degredation all the way back to IE8
 
 
 		//- ROMCorp.com
@@ -145,23 +221,41 @@
 				h4.subsection-subheading.subsection-heading--callout.subsection-heading--callout--round-bottom-left.portfolio-date.
 					June 2013
 
-			dl.subsection--padding
-				dt.portfolio-heading Backend Framework and Content Management System
-				dd.portfolio-description Both WordPress 3.x and Joomla 3.x are used together, communicating over AJAX with many database links so content in one CMS is accessible in the other
+			.clearfix
+				ul.clearing-thumbs.clearing-feature.subsection--padding.subsection--float-right(data-clearing)
+					li.clearing-featured-img
+						a.th.radius(href="/assets/img/websites/full/romcorp.com/01.png")
+							img(src="/assets/img/websites/thumbnail/romcorp.com/01.png", data-caption="Homepage")
+					li
+						a.th.radius(href="/assets/img/websites/full/romcorp.com/02.png")
+							img(src="/assets/img/websites/thumbnail/romcorp.com/02.png", data-caption="Homepage w/ Super Menu")
+					li
+						a.th.radius(href="/assets/img/websites/full/romcorp.com/03.png")
+							img(src="/assets/img/websites/thumbnail/romcorp.com/03.png", data-caption="Product Page")
+					li
+						a.th.radius(href="/assets/img/websites/full/romcorp.com/04.png")
+							img(src="/assets/img/websites/thumbnail/romcorp.com/04.png", data-caption="Modal Window w/ YouTube Video")
 
-				dt.portfolio-heading Frontend Frameworks
-				dd.portfolio-description
-					ul.portfolio-description__list
-						li.portfolio-description__item Bootstrap 2
-						li.portfolio-description__item jQuery
-						li.portfolio-description__item AJAX
-						li.portfolio-description__item PointerEvents Polyfill
+				dl.subsection--padding
+					dt.portfolio-heading Associated Organization
+					dd.portfolio-description: a(href="http://group3solutions.com") Group 3 Solutions
 
-				dt.portfolio-heading Noteable Features
-				dd.portfolio-description Completely new menu navigation so touch devices and utilize the navigational functionality of the desktop website
+					dt.portfolio-heading Backend Framework and Content Management System
+					dd.portfolio-description Both WordPress 3.x and Joomla 3.x are used together, communicating over AJAX with many database links so content in one CMS is accessible in the other
 
-				dt.portfolio-heading Compatibility Requirements
-				dd.portfolio-description Compatibility back to IE8
+					dt.portfolio-heading Frontend Frameworks
+					dd.portfolio-description
+						ul.portfolio-description__list
+							li.portfolio-description__item Bootstrap 2
+							li.portfolio-description__item jQuery
+							li.portfolio-description__item AJAX
+							li.portfolio-description__item PointerEvents Polyfill
+
+					dt.portfolio-heading Noteable Features
+					dd.portfolio-description Completely new menu navigation so touch devices can utilize the navigational functionality of the desktop website
+
+					dt.portfolio-heading Compatibility Requirements
+					dd.portfolio-description Compatibility back to IE8
 
 
 		//- BIVIUltraDuramune.com
@@ -172,18 +266,39 @@
 				h4.subsection-subheading.subsection-heading--callout.subsection-heading--callout--round-bottom-left.portfolio-date.
 					November 2012
 
-			dl.subsection--padding
-				dt.portfolio-heading Backend Framework and Content Management System
-				dd.portfolio-description Adobe CQ5
+			.clearfix
+				ul.clearing-thumbs.clearing-feature.subsection--padding.subsection--float-right(data-clearing)
+					li.clearing-featured-img
+						a.th.radius(href="/assets/img/websites/full/biviultraduramune.com/01.png")
+							img(src="/assets/img/websites/thumbnail/biviultraduramune.com/01.png", data-caption="Mobile View")
+					li
+						a.th.radius(href="/assets/img/websites/full/biviultraduramune.com/02.png")
+							img(src="/assets/img/websites/thumbnail/biviultraduramune.com/02.png", data-caption="Tablet View")
+					li
+						a.th.radius(href="/assets/img/websites/full/biviultraduramune.com/03.png")
+							img(src="/assets/img/websites/thumbnail/biviultraduramune.com/03.png", data-caption="Desktop View")
+					li
+						a.th.radius(href="/assets/img/websites/full/biviultraduramune.com/04.png")
+							img(src="/assets/img/websites/thumbnail/biviultraduramune.com/04.png", data-caption="Large Desktop View")
+					li
+						a.th.radius(href="/assets/img/websites/full/biviultraduramune.com/05.png")
+							img(src="/assets/img/websites/thumbnail/biviultraduramune.com/05.png", data-caption="Full-screen Desktop View")
 
-				dt.portfolio-heading Frontend Frameworks
-				dd.portfolio-description
-					ul.portfolio-description__list
-						li.portfolio-description__item Zurb Foundation 3
-						li.portfolio-description__item jQuery
+				dl.subsection--padding
+					dt.portfolio-heading Associated Organization
+					dd.portfolio-description: a(href="http://vml.com") VML, Inc
 
-				dt.portfolio-heading Noteable Features
-				dd.portfolio-description Responsive design for all devices
+					dt.portfolio-heading Backend Framework and Content Management System
+					dd.portfolio-description Adobe CQ5
 
-				dt.portfolio-heading Compatibility Requirements
-				dd.portfolio-description Compatibility back to IE7
+					dt.portfolio-heading Frontend Frameworks
+					dd.portfolio-description
+						ul.portfolio-description__list
+							li.portfolio-description__item Zurb Foundation 3
+							li.portfolio-description__item jQuery
+
+					dt.portfolio-heading Noteable Features
+					dd.portfolio-description Responsive design for all devices
+
+					dt.portfolio-heading Compatibility Requirements
+					dd.portfolio-description Compatibility back to IE7

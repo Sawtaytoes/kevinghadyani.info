@@ -48,17 +48,15 @@
 .subsection-heading--callout
 	padding: rem-calc(6) rem-calc(10)
 	display: block
-	font-size: rem-calc(32)
-	float: left
 	@extend %background-color--muted
 	border-bottom: 2px solid $border-color--bold
 	@extend %box-shadow--generic
 
 .subsection-heading--callout--round-bottom-left
-	border-bottom-left-radius: rem-calc(2)
+	border-bottom-left-radius: rem-calc(4)
 
-.subsection-heading--callout--round-bottom-right
-	border-bottom-right-radius: rem-calc(2)
+.subsection-heading--callout__small
+	@extend .site-header__subheading
 
 .subsection-heading__link
 	@extend %font-color--bold
@@ -74,6 +72,17 @@
 
 .subsection__section
 	padding: rem-calc(20)
+
+@media #{$medium-up}
+	.subsection-heading--callout
+		font-size: rem-calc(32)
+		float: left
+
+	.subsection-heading--callout--round-bottom-right
+		border-bottom-right-radius: rem-calc(4)
+
+	.subsection--float-right
+		float: right
 
 
 /////////////////////////////////////

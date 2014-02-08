@@ -141,6 +141,18 @@
       "src": "fontawesome"
     },
     {
+      "uid": "01c946ce2ed5500e0a918f2b3a7d1923",
+      "css": "css3",
+      "code": 59411,
+      "src": "fontawesome"
+    },
+    {
+      "uid": "ff44f01f60948555026580eedf1e39bb",
+      "css": "html5",
+      "code": 59410,
+      "src": "fontawesome"
+    },
+    {
       "uid": "e1597911f34fea0a188ae51fe4a2d9a9",
       "css": "stackoverflow-1",
       "code": 59408,

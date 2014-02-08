@@ -110,9 +110,9 @@
 .icon-coffee-bean:before,
 .icon-csharp:before,
 .icon-php:before,
-.icon-html:before,
+// .icon-html:before,
 .icon-apache:before,
-.icon-css:before,
+// .icon-css:before,
 .icon-linux-mint:before,
 .icon-javascript:before,
 .icon-ubuntu:before,
@@ -185,13 +185,13 @@
 .icon-csharp:before { content: "\f134"; }
 .icon-php:before { content: "\f135"; }
 // .icon-postgres-alt:before { content: "\f136"; }
-.icon-html:before { content: "\f137"; }
+// .icon-html:before { content: "\f137"; }
 // .icon-mfizz:before { content: "\f138"; }
 .icon-apache:before { content: "\f139"; }
 // .icon-hadoop:before { content: "\f13a"; }
 // .icon-ruby-on-rails-alt:before { content: "\f13b"; }
 // .icon-mobile-phone-broadcast:before { content: "\f13c"; }
-.icon-css:before { content: "\f13d"; }
+// .icon-css:before { content: "\f13d"; }
 // .icon-playframework:before { content: "\f13e"; }
 // .icon-clojure:before { content: "\f13f"; }
 // .icon-mobile-phone-alt:before { content: "\f140"; }
@@ -221,99 +221,3 @@
 // .icon-google-code:before { content: "\f158"; }
 // .icon-kde:before { content: "\f159"; }
 // .icon-grails-alt:before { content: "\f15a"; }
-
-
-// These classes only added to fix FontFamily to display FontMfizz during debug/inspection
-// // .icon-microscope,
-// // .icon-wireless,
-// // .icon-objc,
-// // .icon-redhat,
-// // .icon-freebsd,
-// // .icon-heroku,
-// // .icon-python,
-// // .icon-satellite,
-// // .icon-grails,
-// // .icon-c,
-// // .icon-postgres,
-// // .icon-database-alt2,
-// // .icon-raspberrypi,
-// // .icon-nginx,
-// // .icon-redis,
-// // .icon-scala,
-// // .icon-gnome,
-// // .icon-perl,
-// // .icon-fedora,
-// // .icon-ghost,
-// // .icon-google,
-// // .icon-netbsd,
-// // .icon-aws,
-// // .icon-bomb,
-// // .icon-looking,
-// // .icon-ruby,
-// // .icon-mysql-alt,
-// // .icon-playframework-alt,
-// // .icon-database,
-// // .icon-database-alt,
-// // .icon-antenna,
-// // .icon-scala-alt,
-// // .icon-platter,
-// // .icon-java-duke,
-// // .icon-iphone,
-// // .icon-script-alt,
-// // .icon-google-alt,
-// // .icon-haskell,
-// // .icon-mariadb,
-// // .icon-phone-retro,
-// // .icon-phone-alt,
-// // .icon-postgres-alt,
-// // .icon-mfizz,
-// // .icon-hadoop,
-// // .icon-ruby-on-rails-alt,
-// // .icon-mobile-phone-broadcast,
-// // .icon-playframework,
-// // .icon-clojure,
-// // .icon-mobile-phone-alt,
-// // .icon-suse,
-// // .icon-java-bold,
-// // .icon-nginx-alt,
-// // .icon-nginx-alt2,
-// // .icon-dreamhost,
-// // .icon-blackberry,
-// // .icon-centos,
-// // .icon-splatter,
-// // .icon-3dprint,
-// // .icon-line-graph,
-// // .icon-cassandra,
-// // .icon-solaris,
-// // .icon-jetty,
-// // .icon-tomcat,
-// // .icon-oracle,
-// // .icon-oracle-alt,
-// // .icon-google-developers,
-// // .icon-google-code,
-// // .icon-kde,
-// // .icon-grails-alt,
-// .icon-cplusplus,
-// .icon-fire-alt,
-// .icon-mobile-device,
-// .icon-java,
-// .icon-debian,
-// .icon-ruby-on-rails,
-// .icon-mysql,
-// .icon-osx,
-// .icon-shell,
-// .icon-script,
-// .icon-coffee-bean,
-// .icon-csharp,
-// .icon-php,
-// .icon-html,
-// .icon-apache,
-// .icon-css,
-// .icon-linux-mint,
-// .icon-javascript,
-// .icon-ubuntu,
-// .icon-php-alt,
-// .icon-nodejs,
-// .icon-mssql {
-// 	font-family: "FontMfizz";
-// }
