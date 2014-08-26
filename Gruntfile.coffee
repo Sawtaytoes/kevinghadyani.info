@@ -145,7 +145,7 @@ module.exports = (grunt) ->
 				files: [
 					'<%= locations.js.ie.src %>selectivizr.js'
 					# '<%= locations.js.ie.src %>svgeezy.js' # No SVGs on this site
-					'<%= locations.root.respondjs %>dest/respond.min.js'
+					# '<%= locations.root.respondjs %>dest/respond.min.js' # Removed this for now as it really makes IE8 slow down
 				]
 
 			foundation:
@@ -461,7 +461,7 @@ module.exports = (grunt) ->
 		]
 
 		# Prod
-		grunt.registerTask 'deploy', [
+		grunt.registerTask 'prod', [
 
 			# Switch to Temp Build Directory
 			'use_temp_dir'
