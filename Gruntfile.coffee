@@ -145,7 +145,7 @@ module.exports = (grunt) ->
 				files: [
 					'<%= locations.js.ie.src %>selectivizr.js'
 					# '<%= locations.js.ie.src %>svgeezy.js' # No SVGs on this site
-					'<%= locations.root.respondjs %>dest/respond.min.js'
+					# '<%= locations.root.respondjs %>dest/respond.min.js' # Removed this for now as it really makes IE8 slow down
 				]
 
 			foundation:
@@ -158,19 +158,19 @@ module.exports = (grunt) ->
 					'<%= locations.js.foundation.vendor.src %>fastclick.js'
 
 					'<%= locations.js.foundation.scripts.src %>foundation.js'
-					'<%= locations.js.foundation.scripts.src %>foundation.abide.js'
-					'<%= locations.js.foundation.scripts.src %>foundation.accordion.js'
+					# '<%= locations.js.foundation.scripts.src %>foundation.abide.js'
+					# '<%= locations.js.foundation.scripts.src %>foundation.accordion.js'
 					'<%= locations.js.foundation.scripts.src %>foundation.alerts.js'
 					'<%= locations.js.foundation.scripts.src %>foundation.clearing.js'
-					'<%= locations.js.foundation.scripts.src %>foundation.dropdown.js'
-					'<%= locations.js.foundation.scripts.src %>foundation.interchange.js'
-					'<%= locations.js.foundation.scripts.src %>foundation.joyride.js'
+					# '<%= locations.js.foundation.scripts.src %>foundation.dropdown.js'
+					# '<%= locations.js.foundation.scripts.src %>foundation.interchange.js'
+					# '<%= locations.js.foundation.scripts.src %>foundation.joyride.js'
 					'<%= locations.js.foundation.scripts.src %>foundation.magellan.js'
-					'<%= locations.js.foundation.scripts.src %>foundation.offcanvas.js'
-					'<%= locations.js.foundation.scripts.src %>foundation.orbit.js'
-					'<%= locations.js.foundation.scripts.src %>foundation.reveal.js'
+					# '<%= locations.js.foundation.scripts.src %>foundation.offcanvas.js'
+					# '<%= locations.js.foundation.scripts.src %>foundation.orbit.js'
+					# '<%= locations.js.foundation.scripts.src %>foundation.reveal.js'
 					'<%= locations.js.foundation.scripts.src %>foundation.tab.js'
-					'<%= locations.js.foundation.scripts.src %>foundation.tooltips.js'
+					# '<%= locations.js.foundation.scripts.src %>foundation.tooltips.js'
 					'<%= locations.js.foundation.scripts.src %>foundation.topbar.js'
 
 					'<%= locations.js.foundation.vendor.src %>placeholder.js'
@@ -461,7 +461,7 @@ module.exports = (grunt) ->
 		]
 
 		# Prod
-		grunt.registerTask 'deploy', [
+		grunt.registerTask 'prod', [
 
 			# Switch to Temp Build Directory
 			'use_temp_dir'
