@@ -133,6 +133,34 @@
       ]
     },
     {
+      "uid": "83149bdccd8d836245ff49d0d661035a",
+      "css": "adobe",
+      "code": 59415,
+      "src": "custom_icons",
+      "selected": true,
+      "svg": {
+        "path": "M715 4.2H1134.1V1007.6L715 4.2ZM419.7 4.2H0.4V1007.6L419.7 4.2ZM567.4 373.9L834.4 1007.5H659.5L579.6 805.7H384.1L567.4 373.9Z",
+        "width": 1131
+      },
+      "search": [
+        "adobe"
+      ]
+    },
+    {
+      "uid": "afcf630a8dee7d0381f7dd17e18a3138",
+      "css": "microsoft-office",
+      "code": 59416,
+      "src": "custom_icons",
+      "selected": true,
+      "svg": {
+        "path": "M7.9 819.2L7.9 207.8 548.7 7.9 842.6 102 842.6 925 548.7 1013.6 7.9 819.2 548.7 884.3 548.7 172.6 196 254.9 196 736.9 7.9 819.2Z",
+        "width": 825
+      },
+      "search": [
+        "microsoft-office"
+      ]
+    },
+    {
       "uid": "62c089cb34e74b3a1200bc7f5314eb4e",
       "css": "firefox",
       "code": 59404,
