@@ -1,4 +1,5 @@
-# Ghadyani Framework for Webpack, React, and Redux
+# KevinGhadyani.info
+A personal website for me to show off past achievements, projects, and my current skillset.
 
 ## Prerequisites
 
