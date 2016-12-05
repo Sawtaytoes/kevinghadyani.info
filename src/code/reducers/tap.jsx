@@ -8,7 +8,7 @@ const getMessageFromLine = (line, identifier) => {
 }
 
 const getTapStats = (state) => {
-	var { messages, total, passed, failed, hasFailures } = state
+	const { messages, total, passed, failed, hasFailures } = state
 
 	if (total && passed && failed && hasFailures) {
 		return state
@@ -38,7 +38,7 @@ const getTapStats = (state) => {
 }
 
 export default (state = {}, action) => {
-	let {
+	const {
 		type,
 		startTime,
 		message,
@@ -52,8 +52,8 @@ export default (state = {}, action) => {
 		}
 
 	case ADD_TAP_MESSAGE: {
-		let messages = state.messages ? state.messages.slice() : [],
-			newState = {}
+		const messages = state.messages ? state.messages.slice() : []
+		let newState = {}
 
 		// Check if we've gotten a valid TAP message
 		if (message.search(/^[(not ok)(ok)(\s\s)(#\s)]+.+$/) === 0) {
