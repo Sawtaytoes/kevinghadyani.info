@@ -1,19 +1,30 @@
 ## Project Files ##
-/~res
-/public
-/temp
-.htaccess
+~res
 
-## Sass ##
-.sass-cache
+## Configs ##
+.env
+.happypack
+includes/config.js
 
-## Bower ##
-/bower_components
+## Logs ##
+logs
+*.log
+npm-debug.log*
 
-## Grunt ##
-/node_modules
+## npm ##
+node_modules
+
+## New Relic ##
+newrelic.js
+
+## Public ##
+web/*
+!web/favicons
+!web/images
+!web/static
 
 ## Misc ##
 .DS_Store
 [Tt]humbs.db
 *.dmp
+._*
