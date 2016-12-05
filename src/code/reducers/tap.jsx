@@ -41,12 +41,7 @@ export default (state = {}, action) => {
 	let {
 		type,
 		startTime,
-		endTime,
-		hasFailures,
 		message,
-		total,
-		passed,
-		failed
 	} = action
 
 	switch (type) {
@@ -56,7 +51,7 @@ export default (state = {}, action) => {
 			startTime
 		}
 
-	case ADD_TAP_MESSAGE:
+	case ADD_TAP_MESSAGE: {
 		let messages = state.messages ? state.messages.slice() : [],
 			newState = {}
 
@@ -74,6 +69,7 @@ export default (state = {}, action) => {
 			...state,
 			...newState,
 		}
+	}
 
 	default:
 		return state

@@ -12,9 +12,6 @@ export default class Routes extends PureComponent {
 		this.views = {}
 
 		this.redirs = [{
-			pattern: '/redirect',
-			to: '/',
-		}, {
 			pattern: '**/',
 			to: ({ location }) => location.pathname.slice(0, -1),
 			exactly: true,
@@ -31,8 +28,14 @@ export default class Routes extends PureComponent {
 			pattern: '/',
 			exactly: true,
 		}, {
-			name: 'about',
-			pattern: '/about',
+			name: 'skills',
+			pattern: '/skills',
+		}, {
+			name: 'sites',
+			pattern: '/sites',
+		}, {
+			name: 'graphics',
+			pattern: '/graphics',
 		}, {
 			name: '404',
 		}].map(route => ({

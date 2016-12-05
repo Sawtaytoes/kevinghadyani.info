@@ -1,12 +1,22 @@
 export default [{
 	displayInHeader: true,
-	name: 'Home',
+	name: 'Who I Am',
 	to: '',
 	description: ""
 }, {
 	displayInHeader: true,
-	name: 'About',
-	to: 'about',
+	name: 'Skills',
+	to: 'skills',
+	description: ""
+}, {
+	displayInHeader: true,
+	name: 'Sites',
+	to: 'sites',
+	description: ""
+}, {
+	displayInHeader: true,
+	name: 'Graphics',
+	to: 'graphics',
 	description: ""
 }, {
 	name: 'Unit Tests',
