@@ -25,7 +25,7 @@ class HeaderNav extends PureComponent {
 
 	renderNavItem({ name, to, description }) {
 		return (
-			<li key="name">
+			<li key={name}>
 				<Link to={`/${to}`} title={description || name}>{name}</Link>
 			</li>
 		)
