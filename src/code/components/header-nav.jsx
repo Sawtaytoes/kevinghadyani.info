@@ -5,12 +5,12 @@ import { connect } from 'react-redux'
 // Utilities
 import StylesLoader from 'utilities/styles-loader'
 
+// Content
+import navItems from 'content/nav-items'
+
 // Styles
 const stylesLoader = StylesLoader.create()
 // .add(require('styl/header-nav'))
-
-// Content
-import navItems from 'content/nav-items'
 
 class HeaderNav extends PureComponent {
 	renderNavItems() { return (
