@@ -10,8 +10,6 @@ import graphicDesigns from 'content/graphic-designs'
 // Styles
 const stylesLoader = StylesLoader.create()
 
-// const pathname = '/graphics'
-
 const FullSizedImage = ({ params }) => {
 	const { id } = params
 	const { src = '', description = '' } = graphicDesigns[id]
