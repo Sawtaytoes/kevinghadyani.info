@@ -10,6 +10,8 @@ import graphicDesigns from 'content/graphic-designs'
 // Styles
 const stylesLoader = StylesLoader.create()
 
+const pathname = '/graphics'
+
 const FullSizedImage = ({ params }) => {
 	const { id } = params
 	const { src = '', description = '' } = graphicDesigns[id]
@@ -21,7 +23,7 @@ const FullSizedImage = ({ params }) => {
 class Graphics extends PureComponent {
 	renderImages() { return (
 		graphicDesigns.map(({ src, description }, index) => (
-			<Link key={src} to={`${index}`} title={description}>
+			<Link key={src} to={`${pathname}/${index}`} title={description}>
 				<img src={`/images/graphic-design/thumbnail/${src}.png`} alt={description} />
 			</Link>
 		))
@@ -37,7 +39,7 @@ class Graphics extends PureComponent {
 
 			{this.renderImages()}
 
-			<Match pattern={`:id`} component={FullSizedImage} />
+			<Match pattern={`${pathname}/:id`} component={FullSizedImage} />
 		</div>
 	)}
 }
