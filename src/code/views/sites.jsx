@@ -6,7 +6,7 @@ import StylesLoader from 'utilities/styles-loader'
 // Styles
 const stylesLoader = StylesLoader.create()
 
-class Home extends PureComponent {
+class Sites extends PureComponent {
 	render() { return (
 		<div>
 			<h2>Hello World</h2>
@@ -17,4 +17,4 @@ class Home extends PureComponent {
 	)}
 }
 
-export default stylesLoader.render(Home)
+export default stylesLoader.render(Sites)
