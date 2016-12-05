@@ -4,24 +4,17 @@ import { Match, Link } from 'react-router'
 // Utilities
 import StylesLoader from 'utilities/styles-loader'
 
+// Content
+import graphicDesigns from 'content/graphic-designs'
+
 // Styles
 const stylesLoader = StylesLoader.create()
 
-const pathname = '/graphics'
-const images = [{
-	src: '01-ddr-club-logos',
-	description: "Logos",
-}, {
-	src: '02-ddr-club-newsletter',
-	description: "Newsletter",
-}, {
-	src: '03-ddr-inferno-poster',
-	description: "Poster",
-}]
+// const pathname = '/graphics'
 
 const FullSizedImage = ({ params }) => {
 	const { id } = params
-	const { src = '', description = '' } = images[id]
+	const { src = '', description = '' } = graphicDesigns[id]
 	return (
 		id && <img src={`/images/graphic-design/full/${src}.png`} alt={description} />
 	)
@@ -29,14 +22,12 @@ const FullSizedImage = ({ params }) => {
 
 class Graphics extends PureComponent {
 	renderImages() { return (
-		images.map(({ src, description }, index) => (
-			<Link key={src} to={`${pathname}/${index}`} title={description}>
+		graphicDesigns.map(({ src, description }, index) => (
+			<Link key={src} to={`${index}`} title={description}>
 				<img src={`/images/graphic-design/thumbnail/${src}.png`} alt={description} />
 			</Link>
 		))
 	)}
-
-	renderFullImage
 
 	render() { return (
 		<div>
@@ -48,7 +39,7 @@ class Graphics extends PureComponent {
 
 			{this.renderImages()}
 
-			<Match pattern={`${pathname}/:id`} component={FullSizedImage} />
+			<Match pattern={`:id`} component={FullSizedImage} />
 		</div>
 	)}
 }
