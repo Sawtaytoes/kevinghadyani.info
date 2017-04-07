@@ -15,7 +15,7 @@ export const Graphics = ({ match: { url } }) => (
 
 		{
 			graphicDesigns.map(({ src, description }, index) => (
-				<Link key={src} to={`${url}/${index}/modal`} title={description}>
+				<Link key={src} to={`${url}/${index}`} title={description}>
 					<img src={`/images/graphic-design/thumbnail/${src}.png`} alt={description} />
 				</Link>
 			))

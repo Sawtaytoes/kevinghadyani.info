@@ -1,8 +1,10 @@
 import React, { PropTypes } from 'react'
 
 import graphicDesigns from 'content/graphic-designs'
+import Modal from 'components/modal'
+import { stylesLoader } from 'utils/styles-loader'
 
-export const FullSizeImage = ({ match: { params: { id } } }) => {
+export const FullSizeImage = ({ match: { url, params: { id } } }) => {
 	const graphicDesign = graphicDesigns[id]
 
 	if (!id || !graphicDesign) return null
@@ -10,7 +12,9 @@ export const FullSizeImage = ({ match: { params: { id } } }) => {
 	const { src = '', description = '' } = graphicDesign
 
 	return (
-		<img src={`/images/graphic-design/full/${src}.png`} alt={description} />
+		<Modal returnUrl={url}>
+			<img className="full-size-image" src={`/images/graphic-design/full/${src}.png`} alt={description} />
+		</Modal>
 	)
 }
 
@@ -22,4 +26,4 @@ FullSizeImage.propTypes = {
 	}).isRequired,
 }
 
-export default FullSizeImage
+export default stylesLoader(require('./full-size-image.styl'))(FullSizeImage)
