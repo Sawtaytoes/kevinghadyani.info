@@ -1,8 +1,9 @@
 import React, { PropTypes } from 'react'
 // import GoogleAnalytics from 'react-g-analytics'
 
-import Header from 'components/site-layout/header'
 import Footer from 'components/site-layout/footer'
+import Header from 'components/site-layout/header'
+import Modal from 'components/modal'
 import StylesLoader from 'utils/styles-loader'
 
 // Styles
@@ -16,6 +17,7 @@ export const SiteLayout = ({ children }) => (
 		<Header />
 		{children}
 		<Footer />
+		<Modal />
 		{/*<GoogleAnalytics id="UA-????????-?" />*/}
 	</div>
 )

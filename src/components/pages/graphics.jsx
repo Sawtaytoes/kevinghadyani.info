@@ -4,7 +4,6 @@ import { Route, Link } from 'react-router-dom'
 import graphicDesigns from 'content/graphic-designs'
 // import { stylesLoader } from 'utils/styles-loader'
 
-// export const FullSizedImage = ({ params }) => {
 export const FullSizedImage = ({ match: { params: { id } } }) => {
 	const graphicDesign = graphicDesigns[id]
 
@@ -16,6 +15,15 @@ export const FullSizedImage = ({ match: { params: { id } } }) => {
 		<img src={`/images/graphic-design/full/${src}.png`} alt={description} />
 	)
 }
+
+FullSizedImage.propTypes = {
+	match: PropTypes.shape({
+		params: PropTypes.shape({
+			id: PropTypes.string,
+		}).isRequired,
+	}).isRequired,
+}
+
 
 export const Graphics = ({ match: { url } }) => (
 	<div>
@@ -33,7 +41,7 @@ export const Graphics = ({ match: { url } }) => (
 			))
 		}
 
-		<Route pattern={`${url}/:id`} component={FullSizedImage} />
+		<Route path={`${url}/:id`} component={FullSizedImage} />
 	</div>
 )
 
