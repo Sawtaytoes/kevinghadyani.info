@@ -1,29 +1,9 @@
 import React, { PropTypes } from 'react'
 import { Route, Link } from 'react-router-dom'
 
+import FullSizeImage from 'components/graphics/full-size-image'
 import graphicDesigns from 'content/graphic-designs'
 // import { stylesLoader } from 'utils/styles-loader'
-
-export const FullSizedImage = ({ match: { params: { id } } }) => {
-	const graphicDesign = graphicDesigns[id]
-
-	if (!id || !graphicDesign) return null
-
-	const { src = '', description = '' } = graphicDesign
-
-	return (
-		<img src={`/images/graphic-design/full/${src}.png`} alt={description} />
-	)
-}
-
-FullSizedImage.propTypes = {
-	match: PropTypes.shape({
-		params: PropTypes.shape({
-			id: PropTypes.string,
-		}).isRequired,
-	}).isRequired,
-}
-
 
 export const Graphics = ({ match: { url } }) => (
 	<div>
@@ -35,13 +15,13 @@ export const Graphics = ({ match: { url } }) => (
 
 		{
 			graphicDesigns.map(({ src, description }, index) => (
-				<Link key={src} to={`${url}/${index}`} title={description}>
+				<Link key={src} to={`${url}/${index}/modal`} title={description}>
 					<img src={`/images/graphic-design/thumbnail/${src}.png`} alt={description} />
 				</Link>
 			))
 		}
 
-		<Route path={`${url}/:id`} component={FullSizedImage} />
+		<Route path={`${url}/:id`} component={FullSizeImage} />
 	</div>
 )
 
